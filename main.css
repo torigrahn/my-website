@@ -1,0 +1,72 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  margin-top: 70px;
+  font-family: sans-serif;
+  background-image: radial-gradient(hotpink, white);
+}
+
+.header {
+  font-weight: bold;
+  font-size: 30px;
+  letter-spacing: 2px;
+  margin-bottom: 0px;
+  font-family: sans-serif;
+  color: DimGray;
+}
+
+.inputSection {
+  display: flex;
+  flex-direction: column;
+  margin: 50px 0px;
+  width: 300px;
+}
+
+::-webkit-input-placeholder {
+  color: gray;
+}
+
+.inputs {
+  width: inherit;
+  display: flex;
+  flex-direction: column;
+}
+
+.inputChoose {
+  margin-top: 10px;
+  background-color: whitesmoke;
+  color: gray;
+}
+
+.addButton {
+  margin-top: 10px;
+  border-radius: 10%;
+  background-color: #87CEFA;
+  color: white;
+  text-align: center;
+  border: none;
+  font-weight: bold;
+  width: 35px;
+  height: 25px;
+}
+
+.goButton {
+  margin-top: 10px;
+  border-radius: 10%;
+  background-color: #48D1CC;
+  color: white;
+  text-align: center;
+  border: none;
+  font-weight: bolder;
+  width: 35px;
+  height: 25px;
+}
+
+.rilakkuma {
+  height: 300px;
+  width: 150px;
+  align-self: flex-start;
+}
