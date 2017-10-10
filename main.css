@@ -6,7 +6,7 @@ body {
   margin: 0;
   margin-top: 70px;
   font-family: sans-serif;
-  background-image: radial-gradient(hotpink, white);
+  background-image: radial-gradient(white, hotpink);
 }
 
 .header {
