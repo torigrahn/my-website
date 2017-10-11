@@ -8,14 +8,38 @@
   <body>
     <span class="header">HELP ME CHOOSE BETWEEN...</span>
     <div class="inputSection">
+      <div>
+        <button class="addButton">Add</button>
+      </div>
       <div class="inputs">
         <input placeholder="Something..." class="inputChoose"></input>
       </div>
-      <div>
-        <button class="addButton">Add</button>
-        <button class="goButton">Go!</button>
-      </div>
     </div>
+    <div class="resultSection"></div>
+    <button class="goButton">Go!</button>
     <img class="rilakkuma" src="https://orig00.deviantart.net/a380/f/2013/110/d/1/learn_japanese_with_rilakkuma___beta___by_acevilletta-d620rp7.png" alt="Rilakkuma">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script>
+    $(function() {
+      $('.resultSection').hide()
+
+      var add_button = function() {
+        $('.inputs').append('<input class="inputChoose"></input>')
+      }
+
+      /*var change_color = function() {
+        $('.header').css('color', 'red');
+      }*/
+
+      var toggle_header = function() {
+        $('.header').toggleClass('color');
+      }
+
+      $('.addButton').click(add_button)
+      //$('.header').click(change_color)
+      $('.header').click(toggle_header)
+    })
+    </script>
   </body>
 </html>
