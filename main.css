@@ -18,6 +18,14 @@ body {
   color: DimGray;
 }
 
+.header:hover {
+  cursor: pointer;
+}
+
+.color {
+  color: pink;
+}
+
 .inputSection {
   display: flex;
   flex-direction: column;
