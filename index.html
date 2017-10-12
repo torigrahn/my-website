@@ -9,7 +9,7 @@
     <span class="header">HELP ME CHOOSE BETWEEN...</span>
     <div class="inputSection">
       <div>
-        <button class="addButton">Add</button>
+        <button class="addButton">Add row</button>
       </div>
       <div class="inputs">
         <input placeholder="Something..." class="inputChoose"></input>
@@ -39,6 +39,19 @@
       $('.addButton').click(add_button)
       //$('.header').click(change_color)
       $('.header').click(toggle_header)
+
+      var options = []
+      var submit = function() {
+        $('.inputSection').hide()
+        $('.resultSection').css('display', 'flex')
+        $('input').each(function() {
+          options.push($(this).val())
+        })
+        var winner = options[Math.floor(Math.random() * options.length)]
+        console.log(winner)
+        $('.resultSection').text(winner)
+      }
+      $('.goButton').click(submit)
     })
     </script>
   </body>
